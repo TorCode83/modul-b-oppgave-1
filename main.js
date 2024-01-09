@@ -28,7 +28,18 @@ You can choose what the actual content is.
 Try to use both the let and const keywords
 ******************************************************************************/
 
-//your code here
+const firstName = "Tor";
+let age = 40;
+let sitting = true;
+let randomInfo = [
+    {
+        hasCare: false,
+        hasEnergy: true,
+        astring: "String Theory Is Real",
+    }
+];
+let AmountOfEnergy = 5;
+let Energyused = 3
 
 /****************************************************************************** 
 ASSIGNMENT 3
@@ -37,7 +48,9 @@ Try out a few of the operators we looked at (+, -, /, *)
 as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
-//your code here
+firstName + " " + "Has Energy Remaining " + " " + (AmountOfEnergy - Energyused) + " " + "For Now.";
+firstName + "Is Could Have Had" + " " + (AmountOfEnergy *= 3) + "If Not For Stupid People.";
+
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -57,13 +70,21 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly 
 ******************************************************************************/
 
+
 let userName = "";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
-//your code here
+
+if ((userName && userName != "") && userAge >= 18 && userIsBlocked === false) {
+    userIsLoggedIn = true;
+    goToPage = "/home";
+    console.log("Welcome.");
+} else {
+    console.log("There was an error.");
+}
 
 /******************************************************************************
 ASSIGNMENT 5
@@ -80,4 +101,6 @@ to see that your conditional is working.
 
 const userMale = false;
 
-//your code here
+
+const userTitle = userMale ? "Mr." : "Mrs.";
+console.log(userTitle);
